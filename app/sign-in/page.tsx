@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { signIn, signUp } from "@/lib/auth/auth-client";
+import { signIn } from "@/lib/auth/auth-client";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -40,7 +40,7 @@ export default function SignIn() {
                     router.push("/dashboard");
                 }
     
-            }catch (err) {
+            }catch {
                 setError("Failed to sign in. Please try again.");
             }finally {
                 setLoading(false);
@@ -81,7 +81,7 @@ export default function SignIn() {
                             {loading ? "Signing In..." : "Sign In"}
                         </Button>
                         <p className="text-sm text-muted-foreground">
-                            Don't have an account? <a href="/sign-up" className="text-primary">Sign Up</a>
+                            Don&apos;t have an account? <a href="/sign-up" className="text-primary">Sign Up</a>
                         </p>
                     </CardFooter>
             </form>

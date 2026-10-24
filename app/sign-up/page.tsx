@@ -40,7 +40,7 @@ export default function SignUp() {
                 router.push("/dashboard");
             }
 
-        }catch (err) {
+        }catch {
             setError("Failed to create an account. Please try again.");
         }finally {
             setLoading(false);

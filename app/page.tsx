@@ -10,20 +10,20 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-br from-white via-blue-50 to-slate-100 dark:from-black dark:via-gray-950 dark:to-gray-900">
       
-      <main className="flex flex-1 items-center justify-center px-6 py-20">
+      <main className="flex flex-1 items-center justify-center px-4 py-12 sm:px-6 sm:py-20">
         
         <section className="max-w-4xl w-full">
           
-          <div className="rounded-3xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-2xl border border-gray-200 dark:border-gray-800 p-10 md:p-16 text-center">
+          <div className="rounded-3xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-2xl border border-gray-200 dark:border-gray-800 p-6 sm:p-10 md:p-16 text-center">
             
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
               A better way to track your{" "}
               <span className="text-blue-600 dark:text-blue-400">
                 job applications
               </span>
             </h1>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <p className="mt-6 text-base sm:text-lg leading-8 text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               Job Application Tracker is a simple and easy to use tool to help
               you keep track of your job applications. With Job Application
               Tracker, you can easily add your job applications, track their
@@ -47,12 +47,12 @@ export default function Home() {
       </main>
       <ImageTabs />
       {/* feature section */}
-      <section className="py-20 bg-gray-100 dark:bg-gray-900">
+      <section className="py-12 sm:py-20 bg-gray-100 dark:bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 dark:text-white">
             Features
           </h2>
-          <p className="mt-4 text-lg text-center text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-base sm:text-lg text-center text-gray-600 dark:text-gray-400">
             Job Application Tracker comes with all the features you need to manage your job applications effectively.
           </p>
         </div>

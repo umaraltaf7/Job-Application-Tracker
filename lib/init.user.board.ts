@@ -12,6 +12,7 @@ const DEFAULT_COLUMNS = [
     },
     {
         name: "Interviewing",
+        order: 2,
     },
 {
         name: "Offer",
